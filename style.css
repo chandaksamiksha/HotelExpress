@@ -1,42 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans');
 
-body
-{
-background:url("wallpapers.jpg") no-repeat fixed 100%;
-background-size:cover;
+@media screen  and (min-width: 750px) {
+    body {
+        margin: 0;
+        padding: 0;
+        
+    }
 }
-nav
-{
-padding-top: 5px;
-}
+
 .container
 {
 opacity:0.5;
-padding:25px 40px 10px 60px;
 font-size: 24px;
 color:white;
 font-weight: bold;
 background-color: black;
 font-family:Dosis;
+padding: 0px;
 }
 
 .placeholderfont
 {
 color:black;
-}
-.breadcrumb
-{
-	font-weight:bold;
-}
-#flights{
-  display:flex;
-}
-#hotelId{
-        display: none;
-}
-.buttonGroupCustom
-{
-margin-left: 90px;
 }
 
 btn.btn-primary:active
@@ -45,44 +30,35 @@ btn.btn-primary:active
 }
 
 label {
-margin-top:12px;
  font-size: 20px;
  font-weight: bold;
 }
 
-[type="date"]
-{
-  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
-}
-
-[type="date"]::-webkit-inner-spin-button 
-{
-  display: none;
-}
-[type="date"]::-webkit-calendar-picker-indicator 
-{
-  opacity: 0;
-}
 .datePicker {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
   background-color: #fff;
   color:grey;
   font-size: 12px;
-  padding: 3px 5px;
-  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
-  width: 210px;
-  margin-right: 218px;
+  
 }
-.hotelDatePicker
-{
-	width:350px;
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  width: 100%;
 }
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
 .searchButton
 { 
   margin-top: 20px;
   margin-bottom:20px;
-  width:160px;
   max-height: 80px;
   color: white;
   font-size: 25px;

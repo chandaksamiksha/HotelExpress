@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hotel Express Using Bootstrap</title>
+  <title>Hotel Express</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
       </div>
       <ul class="nav navbar-nav navbar-right">
         <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         </ul>
 
         <li class="dropdown">
@@ -49,11 +49,11 @@
     </div>
   </nav>
 
-  <!-- Main Content Well -->
+
   <div class="container">
   <div id="hotel">
       <form id="hotelForm">
-      <div class="row margin">
+      <div class="row">
       <div class="col-md-12">
 
 <!--Going To-->
@@ -65,53 +65,36 @@
         </div>
         
         <!--Check In Date-->
-        <!--<div class="row">-->
+        <div class="row">
         <div class="col-md-6">
         <div class="form-group">
         <label>Check-In</label>
         <div class="input-group">
-        <span ></span>
-        <input class="datePicker hotelDatePicker placeholderfont" type="date" name="checkInDate" placeholder="dd-mm-yyyy" id="datepickerId"> 
+    
+        <input class="datePicker placeholderfont" type="date" name="checkInDate" placeholder="dd-mm-yyyy" id="datepickerId"> 
         </div>
         </div>
         </div>
         
         <!--Check Out Date-->                              
-        <div class="col-md-4">
+        <div class="col-md-6">
         <div class="form-group">
         <label>Check Out</label>
         <div class="input-group">
         <span></span>
-        <input class="datePicker hotelDatePicker placeholderfont" type="date" name="checkOutdate" placeholder="dd-mm-yyyy" id="datepickerId"> 
+        <input class="datePicker placeholderfont" type="date" name="checkOutdate" placeholder="dd-mm-yyyy" id="datepickerId"> 
         </div>
         </div>
         </div>
-        
+        </div>
 
-        <!--Room's Option List-->
-        <div class="col-md-4">
-        <div class="form-group">
-        <label for="rooms">Rooms</label>
-        <select class="form-control" id="rooms">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9+">9+</option>
-        </select>
-        </div>
-        </div>
 
         <!--Adults Option List-->
-        <div class="col-md-4">
+        <div class="col-md-2">
         <div class="form-group">
         <label for="adults">Adults(18+)</label>
         <select class="form-control" id="adults">
-        <option value="1">1</option>
+        <option selected="selected" value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
@@ -125,9 +108,22 @@
         </div>
         
         <!--Children-->
-        <div class="col-md-4">
+        <div class="col-md-2">
         <label for="children">Children(0-17)</label>
-        <select class="form-control" id="children">
+        <select name="child" class="form-control" id="children">
+        <option selected="selected" value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select>
+        </div>
+        
+<div class="col-md-1">
+        <label for="age">Age</label>
+        <select name="age" class="form-control" id="ageChild">
+        <option selected="selected" value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -136,13 +132,21 @@
         <option value="6">6</option>
         <option value="7">7</option>
         <option value="8">8</option>
-        <option value="9+">9+</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
         </select>
+        <div id="addElement" style="border: 1px solid black"></div>
         </div>
         
-
         <!--Search Button-->
-        <div class="col-md-10">
+        <div class="col-md-12">
         <button type="submit" class="searchButton">Search</button>
         </div>
         </div>

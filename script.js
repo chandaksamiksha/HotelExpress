@@ -1,24 +1,7 @@
-$(document).ready(function(){
-    $("#hotelButton").on("click",function(){
-    $("#flights").css("display","none");
-    $("#hotelId").css("display","flex");
-  
+$("#children").change(function(){
+  var value=$("#children").find(":selected").text();
+$('#addElement').html("");
+for(var i=1; i<value;i++){
+   $('#addElement').append("<div><label>Room-"+(i+1)+"</label></div><label>Children(0-17)</label><select name='number'></select><label>Adult(18+)</label><select name='number'></select>");
+}
 });
-
-
-    $("#flightButton").on("click",function(){
-    $("#flights").css("display","flex");
-    $("#hotelId").css("display","none");
-    });
-
-    $("#default").on("click",function(){
-    $("#returnLabel").css("display","inline");
-    $("#returndatepickerId").css("display","inline");	
-    });
-
-    $("#primary").on("click",function(){
-    $("#returnLabel").css("display","none");
-    $("#returndatepickerId").css("display","none");	
-    });
-});
-
